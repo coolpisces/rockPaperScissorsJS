@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+    <script src="https://kit.fontawesome.com/2ed001a2f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="gameContainer">
+        <div class="header">
+            <h1>Rock Paper Scissors Game</h1>
+        </div>
+        <h2>Player <span class="choice" id="playerTurn"></span> - Score: <span id="playerScore"></span></h2>
+        <div class="playerContainer" id="player">
+            <i class="icon fa-regular fa-hand-back-fist" id="playerRock" title="Rock" onclick="select('rock')"></i>
+            <i class="icon fa-regular fa-hand" title="Paper" id="playerPaper" onclick="select('paper')"></i>
+            <i class="icon fa-regular fa-hand-scissors" title="Scissors" id="playerScissors"
+                onclick="select('scissors')"></i>
+        </div>
+        <h2>Computer <span class="choice" id="computerTurn"></span> - Score: <span id="computerScore"></span></h2>
+        <div class="playerContainer" id="computer">
+            <i class="icon fa-regular fa-hand-back-fist" title="Rock" id="computerRock"></i>
+            <i class="icon fa-regular fa-hand" title="Paper" id="computerPaper"></i>
+            <i class="icon fa-regular fa-hand-scissors" title="Scissors" id="computerScissors"></i>
+        </div>
+        <div class="resetContainer">
+            <i class="resetIcon fa-solid fa-rotate" title="Reset" onclick="resetAll()"></i>
+        </div>
+        <div class="resultContainer">
+            <h3 class="resultText" id="resultText">... kazandı</h3>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/2ed001a2f5.js" crossorigin="anonymous"></script>
+    <script src="myScript.js"></script>
+    <script src="confetti.js"></script>
+</body>
+
+</html>
